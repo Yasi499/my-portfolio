@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ярослав Сорокотяга — Full Stack Developer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/favicon.ico">
+    <link rel="stylesheet" href="./static/styles/reset.css">
+    <link rel="stylesheet" href="./static/lib/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/styles/styles.css">
+</head>
+<body>
+
+    <!-- 1. HEADER — НАВІГАЦІЯ -->
+    <header class="site-header sticky-top">
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand brand-logo" href="#">
+                    &lt;<span class="brand-accent">YS</span>.dev /&gt;
+                </a>
+
+                <div class="d-flex align-items-center gap-2">
+                    <button id="themeToggle" class="theme-btn" type="button" aria-label="Перемкнути тему">
+                        <span id="themeIcon">🌙</span>
+                        <span id="themeText">Темна</span>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Відкрити меню">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link" href="#about">Про мене</a></li>
+                        <li><a class="nav-link" href="#skills">Технології</a></li>
+                        <li><a class="nav-link" href="#projects">Проєкти</a></li>
+                        <li><a class="nav-link" href="#contact">Контакти</a></li>
+                        <li>
+                            <a href="./static/files/CV_Yaroslav_Sorokotiaga.html" download="CV_Yaroslav_Sorokotiaga.html" class="btn btn-primary btn-sm">
+                                ⬇ Download CV
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. HERO — ГОЛОВНИЙ ЕКРАН -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <span class="section-tag">👋 Вітаю у моєму портфоліо</span>
+                        <h1 class="hero-title">Ярослав Сорокотяга</h1>
+                        <p class="hero-role">Future Full Stack Developer</p>
+                        <p class="hero-desc">
+                            Створюю сучасні адаптивні вебсайти, інтерактивні інтерфейси та Telegram-ботів із інтеграцією штучного інтелекту. Поєдную чисту верстку на HTML5/CSS3/Bootstrap 5 із логікою на JavaScript, Next.js та Python.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#projects" class="btn btn-primary">🚀 Переглянути проєкти</a>
+                            <a href="#contact" class="btn btn-outline">✉️ Зв'язатися</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <article class="dev-card">
+                            <div class="window-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                                <span class="small ms-2 code-comment">developer.config.js</span>
+                            </div>
+                            <pre style="margin: 0; white-space: pre-wrap; line-height: 1.65;"><code><span class="code-key">const</span> developer = {
+  <span class="code-key">name</span>: <span class="code-str">"Ярослав Сорокотяга"</span>,
+  <span class="code-key">location</span>: <span class="code-str">"Полтава, Україна"</span>,
+  <span class="code-key">role</span>: <span class="code-str">"Full Stack Developer"</span>,
+  <span class="code-key">stack</span>: [
+    <span class="code-str">"HTML5"</span>, <span class="code-str">"CSS3"</span>, <span class="code-str">"Bootstrap 5"</span>,
+    <span class="code-str">"JavaScript"</span>, <span class="code-str">"Next.js"</span>, <span class="code-str">"Python"</span>
+  ],
+  <span class="code-key">openToProjects</span>: <span class="code-bool">true</span>
+};</code></pre>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ABOUT ME — ПРО МЕНЕ -->
+        <section id="about" class="py-5 section-alt">
+            <div class="container">
+                <div class="text-center mb-5 reveal">
+                    <span class="section-tag">Про мене</span>
+                    <h2 class="section-title">Шлях у розробці та мої цілі</h2>
+                    <p class="section-subtitle">Коротко про те, хто я, чому обрав ІТ та які технології розвиваю щодня</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="card h-100 portfolio-card">
+                            <div class="card-body p-4">
+                                <div class="card-icon">👨‍💻</div>
+                                <h3 class="fw-bold mb-2" style="font-size: 1.15rem;">Хто я</h3>
+                                <p class="muted-text small mb-0">
+                                    Мене звати Ярослав, я з Полтави. Навчаюся в 9-му класі та паралельно здобуваю практичну ІТ-освіту в Комп'ютерній Академії IT Step. Регулярно тренуюся в ММА, що вчить дисципліні та роботі на результат.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="card h-100 portfolio-card">
+                            <div class="card-body p-4">
+                                <div class="card-icon">💡</div>
+                                <h3 class="fw-bold mb-2" style="font-size: 1.15rem;">Чому програмування</h3>
+                                <p class="muted-text small mb-0">
+                                    Мені подобається перетворювати ідею з нуля на реальний продукт, яким користуються люди — від зручного адаптивного лендінгу до розумного бота в Telegram.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="card h-100 portfolio-card">
+                            <div class="card-body p-4">
+                                <div class="card-icon">⚙️</div>
+                                <h3 class="fw-bold mb-2" style="font-size: 1.15rem;">Цікаві напрямки</h3>
+                                <p class="muted-text small mb-0">
+                                    Full Stack веброзробка (Next.js, Node.js, Bootstrap), створення вебдодатків, Telegram-ботів та інтеграція сучасних AI API у реальні сервіси.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="card h-100 portfolio-card">
+                            <div class="card-body p-4">
+                                <div class="card-icon">🎯</div>
+                                <h3 class="fw-bold mb-2" style="font-size: 1.15rem;">Мої цілі</h3>
+                                <p class="muted-text small mb-0">
+                                    Опанувати повний цикл розробки від верстки до серверної частини й баз даних, зібрати сильне портфоліо комерційних проєктів та стати професійним Full Stack / AI інженером.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. TECH STACK — ТЕХНОЛОГІЇ -->
+        <section id="skills" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5 reveal">
+                    <span class="section-tag">Tech Stack</span>
+                    <h2 class="section-title">Технології та інструменти</h2>
+                    <p class="section-subtitle">Стек, який я використовую у навчальних і власних пет-проєктах</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="card h-100 portfolio-card">
+                            <div class="card-body p-4">
+                                <div class="card-icon">🎨</div>
+                                <h3 class="fw-bold mb-3" style="font-size: 1.15rem;">Frontend</h3>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="tech-badge">HTML5</span>
+                                    <span class="tech-badge">CSS3</span>
+                                    <span class="tech-badge">Bootstrap 5</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">React</span>
+                                    <span class="tech-badge">Next.js</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="card h-100 portfolio-card">
+                            <div class="card-body p-4">
+                                <div class="card-icon">🖥️</div>
+                                <h3 class="fw-bold mb-3" style="font-size: 1.15rem;">Backend & AI</h3>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="tech-badge">Node.js</span>
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">REST API</span>
+                                    <span class="tech-badge">Telegram API</span>
+                                    <span class="tech-badge">OpenRouter AI</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="card h-100 portfolio-card">
+                            <div class="card-body p-4">
+                                <div class="card-icon">🗄️</div>
+                                <h3 class="fw-bold mb-3" style="font-size: 1.15rem;">Database & Cloud</h3>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="tech-badge">SQL</span>
+                                    <span class="tech-badge">MS Access</span>
+                                    <span class="tech-badge">Vercel</span>
+                                    <span class="tech-badge">GitHub Pages</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="card h-100 portfolio-card">
+                            <div class="card-body p-4">
+                                <div class="card-icon">🛠️</div>
+                                <h3 class="fw-bold mb-3" style="font-size: 1.15rem;">Tools</h3>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="tech-badge">Git</span>
+                                    <span class="tech-badge">GitHub</span>
+                                    <span class="tech-badge">VS Code</span>
+                                    <span class="tech-badge">Postman</span>
+                                    <span class="tech-badge">DevTools</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PROJECTS — МОЇ ПРОЄКТИ -->
+        <section id="projects" class="py-5 section-alt">
+            <div class="container">
+                <div class="text-center mb-4 reveal">
+                    <span class="section-tag">Портфоліо робіт</span>
+                    <h2 class="section-title">Мої проєкти</h2>
+                    <p class="section-subtitle">Навчальні та власні розробки з вихідним кодом на GitHub</p>
+                </div>
+
+                <!-- Фільтрація проєктів за технологіями -->
+                <div class="d-flex flex-wrap justify-content-center gap-2 mb-5 reveal">
+                    <button class="filter-btn active" type="button" data-filter="all">Усі проєкти</button>
+                    <button class="filter-btn" type="button" data-filter="bootstrap">HTML / CSS / Bootstrap</button>
+                    <button class="filter-btn" type="button" data-filter="nextjs">JavaScript / Next.js</button>
+                    <button class="filter-btn" type="button" data-filter="ai">AI / API</button>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Проєкт 1 -->
+                    <div class="col-md-6 col-lg-4 project-item reveal" data-category="nextjs ai">
+                        <article class="card h-100 portfolio-card">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="card-icon mb-0">🤖</div>
+                                    <span class="badge tech-badge">AI / Next.js</span>
+                                </div>
+                                <h3 class="fw-bold mb-2" style="font-size: 1.2rem;">AI Telegram Bot</h3>
+                                <p class="muted-text small mb-3">
+                                    Інтелектуальний Telegram-бот на базі Next.js App Router та JavaScript з підключенням сучасних мовних моделей через OpenRouter API та деплоєм на Vercel.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-badge">Next.js</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">OpenRouter API</span>
+                                    <span class="tech-badge">Vercel</span>
+                                </div>
+                                <div class="mt-auto d-flex gap-2">
+                                    <a href="https://github.com/Yasi499" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm w-100">
+                                        GitHub Профіль ↗
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Проєкт 2 -->
+                    <div class="col-md-6 col-lg-4 project-item reveal" data-category="nextjs ai">
+                        <article class="card h-100 portfolio-card">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="card-icon mb-0">🌐</div>
+                                    <span class="badge tech-badge">Web / Next.js</span>
+                                </div>
+                                <h3 class="fw-bold mb-2" style="font-size: 1.2rem;">AI Trends 2026</h3>
+                                <p class="muted-text small mb-3">
+                                    Сучасний інформаційний веблендінг про ключові тренди штучного інтелекту 2026 року з адаптивною сіткою та швидким хмарним хостингом.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-badge">Next.js</span>
+                                    <span class="tech-badge">HTML5</span>
+                                    <span class="tech-badge">CSS3</span>
+                                    <span class="tech-badge">GitHub</span>
+                                </div>
+                                <div class="mt-auto d-flex gap-2">
+                                    <a href="https://github.com/Yasi499" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm w-100">
+                                        GitHub Профіль ↗
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Проєкт 3 -->
+                    <div class="col-md-6 col-lg-4 project-item reveal" data-category="bootstrap">
+                        <article class="card h-100 portfolio-card">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="card-icon mb-0">🥗</div>
+                                    <span class="badge tech-badge">Bootstrap 5</span>
+                                </div>
+                                <h3 class="fw-bold mb-2" style="font-size: 1.2rem;">HealthyDay Landing</h3>
+                                <p class="muted-text small mb-3">
+                                    Адаптивний статичний лендінг про здоровий сніданок та збалансований режим харчування протягом дня з використанням сітки Bootstrap 5.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-badge">HTML5</span>
+                                    <span class="tech-badge">CSS3</span>
+                                    <span class="tech-badge">Bootstrap 5</span>
+                                    <span class="tech-badge">jQuery</span>
+                                </div>
+                                <div class="mt-auto d-flex gap-2">
+                                    <a href="https://github.com/Yasi499/site-project1" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm w-100">
+                                        GitHub Репозиторій ↗
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CONTACT — КОНТАКТИ -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5 reveal">
+                    <span class="section-tag">Контакти</span>
+                    <h2 class="section-title">Зв'язатися зі мною</h2>
+                    <p class="section-subtitle">Відкритий до навчальних колаборацій, нових проєктів та обміну досвідом</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <a href="mailto:yaroslav.dev@gmail.com" class="contact-card">
+                            <div class="card-icon mb-0">📧</div>
+                            <div>
+                                <div class="small muted-text">Email</div>
+                                <div class="fw-bold">yaroslav.dev@gmail.com</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <a href="https://github.com/Yasi499" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="card-icon mb-0">💻</div>
+                            <div>
+                                <div class="small muted-text">GitHub</div>
+                                <div class="fw-bold">github.com/Yasi499</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <a href="https://t.me/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="card-icon mb-0">✈️</div>
+                            <div>
+                                <div class="small muted-text">Telegram</div>
+                                <div class="fw-bold">@Yasi499</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer py-4">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <p class="small mb-0">© 2026 Ярослав Сорокотяга. Створено на HTML5, CSS3 та Bootstrap 5.</p>
+                <a href="#" class="small fw-semibold brand-accent">↑ Нагору</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./static/lib/jquery-4.1.0.min.js"></script>
+    <script src="./static/lib/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./static/scripts/main.js"></script>
+</body>
+</html>
